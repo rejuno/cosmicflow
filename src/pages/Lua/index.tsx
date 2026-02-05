@@ -55,8 +55,8 @@ function renderMoonPhase(phase: string){
     switch(phase) {
     case "New Moon": 
         return(
-            <div className = "gap-8 flex flex-col items-center text-center">
-            <img src={luaNova} alt="Lua Nova" />
+            <div className = "gap-8 flex flex-row items-center text-center">
+            <img src={luaNova} alt="Lua Nova" className="w-20" />
             <p className="text-black capitalize">
                 Lua Nova
             </p>
@@ -65,8 +65,8 @@ function renderMoonPhase(phase: string){
 
     case "Waxing Crescent": 
         return(
-            <div className = "gap-8 flex flex-col items-center text-center">
-            <img src={luaCrescente} alt="Lua Crescente" />
+            <div className = "gap-8 flex flex-row items-center text-center">
+            <img src={luaCrescente} alt="Lua Crescente" className="w-20" />
             <p className="text-black capitalize">
                 Lua Crescente
             </p>
@@ -75,8 +75,8 @@ function renderMoonPhase(phase: string){
     
     case "First Quarter": 
         return(
-            <div className = "gap-8 flex flex-col items-center text-center">
-            <img src={quartoCrescente} alt="Quarto Crescente" />
+            <div className = "gap-8 flex flex-row items-center text-center">
+            <img src={quartoCrescente} alt="Quarto Crescente" className="w-20" />
             <p className="text-black capitalize">
                 Quarto Crescente
             </p>
@@ -85,8 +85,8 @@ function renderMoonPhase(phase: string){
     
     case "Waxing Gibbous": 
         return(
-            <div className = "gap-8 flex flex-col items-center text-center">
-            <img src={crescenteGibosa} alt="Gibosa Crescente" />
+            <div className = "gap-8 flex flex-row items-center text-center">
+            <img src={crescenteGibosa} alt="Gibosa Crescente" className="w-20" />
             <p className="text-black capitalize">
                 Gibosa Crescente
             </p>
@@ -95,8 +95,8 @@ function renderMoonPhase(phase: string){
     
     case "Full Moon": 
         return(
-            <div className = "gap-8 flex flex-col items-center text-center">
-            <img src={luaCheia} alt="Lua Cheia" />
+            <div className = "gap-8 flex flex-row items-center text-center">
+            <img src={luaCheia} alt="Lua Cheia" className="w-20" />
             <p className="text-black capitalize">
                 Lua Cheia
             </p>
@@ -105,8 +105,8 @@ function renderMoonPhase(phase: string){
     
     case "Waning Gibbous": 
         return(
-            <div className = "gap-8 flex flex-col items-center text-center">
-            <img src={minguanteGibosa} alt="Gibosa Minguante" />
+            <div className = "gap-8 flex flex-row items-center text-center">
+            <img src={minguanteGibosa} alt="Gibosa Minguante" className="w-20" />
             <p className="text-black capitalize">
                 Gibosa Minguante
             </p>
@@ -115,8 +115,8 @@ function renderMoonPhase(phase: string){
     
     case "Last Quarter": 
         return(
-            <div className = "gap-8 flex flex-col items-center text-center">
-            <img src={quartoMinguante} alt="Quarto Minguante" />
+            <div className = "gap-8 flex flex-row items-center text-center">
+            <img src={quartoMinguante} alt="Quarto Minguante" className="w-20"/>
             <p className="text-black capitalize">
                 Quarto Minguante
             </p>
@@ -125,8 +125,8 @@ function renderMoonPhase(phase: string){
     
     case "Waning Crescent": 
         return(
-            <div className = "gap-8 flex flex-col items-center text-center">
-            <img src={luaMinguante} alt="Lua Minguante" />
+            <div className = "gap-8 flex flex-row items-center text-center">
+            <img src={luaMinguante} alt="Lua Minguante" className="w-20" />
             <p className="text-black capitalize">
                 Lua Minguante
             </p>
@@ -139,7 +139,7 @@ function renderMoonPhase(phase: string){
 
 
   return (
-    <div className="rounded-2xl bg-white p-6  gap-2 w-64">
+    <div className="rounded-2xl bg-white p-6  gap-2 w-full">
 
     {renderMoonPhase(moon.moon_phase)}
     </div>

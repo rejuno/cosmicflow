@@ -74,7 +74,7 @@ export default function Astronauts() {
 
   return (
     <div
-  className="group relative w-64 h-64 rounded-full overflow-hidden cursor-pointer"
+  className="group relative w-full flex justify-center text-center overflow-hidden cursor-pointer"
   onClick={() =>
     window.open(
       `https://www.google.com/search?q=${encodeURIComponent(
@@ -87,12 +87,13 @@ export default function Astronauts() {
   <img
     src={astronaut.profile_image ?? ""}
     alt={astronaut.name}
-    className="w-full h-full object-cover"
+    className="w-64 h-64 rounded-full  object-cover object-top-left"
   />
 
   <div
     className="
-      absolute inset-0
+    w-64 h-64 rounded-full
+    absolute
       bg-black/70
       flex items-center justify-center
       text-white text-lg font-bold
