@@ -1,6 +1,7 @@
 import Astronautas from "./pages/Astronautas"
 import Lua from "./pages/Lua"
 import CeuLocal from "./pages/CeuLocal"
+import DataComemorativa from "./pages/DataComemorativa"
 
 export default function Dashboard() {
   return (
@@ -13,7 +14,7 @@ export default function Dashboard() {
           </div>
 
           <div className="container-infos-2">
-            <div>Data comemorativa de hoje</div>
+            <DataComemorativa />
             <div>Calendario lunar</div>
           </div>
       </div>
