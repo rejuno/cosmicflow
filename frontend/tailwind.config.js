@@ -15,7 +15,7 @@ export default {
     },
       fontFamily: {
         cinzel: ['Cinzel', 'serif'],
-        sora: ['Sora', 'sans-serif'],
+        sora: ['Cormorant', 'sans-serif'],
       }
   },
   plugins: [],

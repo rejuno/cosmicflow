@@ -124,8 +124,8 @@ export default function DataComemorativa() {
         {/* O DESIGN QUE VOCÊ ENVIOU, AGORA REAGINDO AO ESTADO isDarkMode */}
         <div className={`w-full backdrop-blur-sm backdrop-brightness-75 px-7 py-12 2xl:p-14 gap-5 flex flex-col items-start transition-all duration-500 ${isDarkMode ? 'bg-primary/80' : 'bg-primary/70'}`}>
           
-          <div className={`absolute top-3 right-4 p-3 2xl:top-8 2xl:right-8 2xl:p-5 rounded-lg text-center shadow-[0_4px_12.6px_0_rgba(0,0,0,0.25)] transition-all duration-500 ${isDarkMode ? 'bg-primary' : 'bg-light'}`}>
-            <span className={`block text-xl 2xl:text-3xl font-sora font-bold ${isDarkMode ? 'text-white' : 'text-primary'}`}>
+          <div className={`absolute top-3 right-4 p-3 2xl:top-8 2xl:right-8 2xl:p-4 rounded-lg text-center shadow-[0_4px_12.6px_0_rgba(0,0,0,0.25)] transition-all duration-500 ${isDarkMode ? 'bg-primary' : 'bg-light'}`}>
+            <span className={`block text-xl 2xl:text-5xl font-sora font-bold ${isDarkMode ? 'text-white' : 'text-primary'}`}>
               {day}
             </span>
             <span className={`block text-lg 2xl:text-xl font-sora font-bold tracking-widest ${isDarkMode ? 'text-white' : 'text-primary'}`}>
@@ -137,7 +137,7 @@ export default function DataComemorativa() {
             {data.title}
           </h2>
 
-          <p className="mt-2 text-sm 2xl:text-base font-sora font-light max-w-6xl text-secondary line-clamp-3">
+          <p className="mt-2 text-sm 2xl:text-2xl font-semibold font-sora max-w-7xl text-secondary line-clamp-3">
             {data.explanation}
           </p>
 
@@ -154,7 +154,7 @@ export default function DataComemorativa() {
         {data.media_type === "image" && (
           <img src={data.url} alt={data.title} className="w-full rounded-lg h-96 object-cover" />
         )}
-        <p className={`mt-4 font-sora whitespace-pre-line ${isDarkMode ? 'text-white' : 'text-gray-700'}`}>
+        <p className={`mt-4 font-sora text-xl font-normal whitespace-pre-line text-primary`}>
           {data.explanation}
         </p>
       </Modal>

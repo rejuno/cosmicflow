@@ -140,10 +140,10 @@ export default function CalendarioLunar() {
 
           <div className="flex items-center gap-0 2xl:gap-2">
             <button onClick={() => setMonth(m => m === 0 ? (setYear(y => y-1), 11) : m - 1)} className={`bg-transparent text-lg border-none cursor-pointer hover:scale-125 transition-transform ${isDark ? 'text-secondary' : 'text-primary'}`}>◀</button>
-            <select value={month} onChange={(e) => setMonth(Number(e.target.value))} className={`bg-transparent font-sora rounded-lg px-3 py-2 border-none focus:ring-0 outline-none ${isDark ? 'text-secondary' : 'text-primary'}`}>
-              {texts.months.map((m, i) => <option key={m} value={i} className="text-black">{m}</option>)}
+            <select value={month} onChange={(e) => setMonth(Number(e.target.value))} className={`text-2xl bg-transparent font-sora rounded-lg px-3 py-2 border-none focus:ring-0 outline-none ${isDark ? 'text-secondary' : 'text-primary'}`}>
+              {texts.months.map((m, i) => <option key={m} value={i} className="text-black ">{m}</option>)}
             </select>
-            <select value={year} onChange={(e) => setYear(Number(e.target.value))} className={`bg-transparent font-sora rounded-lg px-3 py-2 border-none focus:ring-0 outline-none ${isDark ? 'text-secondary' : 'text-primary'}`}>
+            <select value={year} onChange={(e) => setYear(Number(e.target.value))} className={`bg-transparent text-2xl font-sora rounded-lg px-3 py-2 border-none focus:ring-0 outline-none ${isDark ? 'text-secondary' : 'text-primary'}`}>
               {yearsRange.map((y) => <option key={y} value={y} className="text-black">{y}</option>)}
             </select>
             <button onClick={() => setMonth(m => m === 11 ? (setYear(y => y+1), 0) : m + 1)} className={`bg-transparent text-lg border-none cursor-pointer hover:scale-125 transition-transform ${isDark ? 'text-secondary' : 'text-primary'}`}>▶</button>
@@ -151,12 +151,12 @@ export default function CalendarioLunar() {
         </div>
 
         {/* DIAS DA SEMANA */}
-        <div className="grid grid-cols-7 text-center font-normal text-sm text-primary font-sora bg-light p-2 rounded-t-lg">
+        <div className="grid grid-cols-7 text-center font-bold text-2xl text-primary font-sora bg-light p-2 rounded-t-lg">
           {texts.weekDays.map((d) => <div key={d}>{d}</div>)}
         </div>
 
         {/* CALENDÁRIO GRID */}
-        <div className="grid grid-cols-7 gap-y-6 gap-x-2 min-h-[330px] text-xl">
+        <div className="grid grid-cols-7 gap-y-6 gap-x-2 min-h-[330px] text-3xl font-sora font-extrabold">
           {Array.from({ length: 42 }).map((_, index) => {
             const dayNumber = index - firstDay + 1;
             if (dayNumber < 1 || dayNumber > daysInMonth) return <div key={index} />;
@@ -184,7 +184,7 @@ export default function CalendarioLunar() {
                 key={dateStr}
                 onClick={() => openDay(dateStr)}
                 disabled={loading || isFuture}
-                className={`relative h-10 w-10 mx-auto rounded-full flex items-center justify-center transition-all duration-300 border-none outline-none focus:ring-0 ${dayStyle}`}
+                className={`relative h-10 w-10 mx-auto rounded-xl flex items-center justify-center transition-all duration-300 border-none outline-none focus:ring-0 ${dayStyle}`}
               >
                 {dayNumber}
               </button>
@@ -197,19 +197,10 @@ export default function CalendarioLunar() {
       <Modal isOpen={openModal} onClose={() => setOpenModal(false)} title={data?.title} footer={<Button onClick={() => setOpenModal(false)} text={texts.btnFechar} />}>
         {data && (
           <>
-            {(() => {
-              const { day, month: mLabel } = formatDayMonth(data.date);
-              return (
-                <div className="mb-2 bg-light font-sora hidden 2xl:flex 2xl:flex-col text-center p-2 rounded-br-lg text-primary w-max absolute z-10 shadow-md">
-                  <p className="font-bold">{day}</p>
-                  <p className="font-bold">{mLabel}</p>
-                </div>
-              );
-            })()}
             {data.media_type === "image" && data.url && (
               <img src={data.url} alt={data.title} className="w-full rounded-lg h-96 object-cover shadow-inner" />
             )}
-            <p className={`mt-4 font-sora leading-relaxed whitespace-pre-line ${isDark ? 'text-gray-200' : 'text-gray-700'}`}>
+            <p className={`mt-4 font-sora text-xl font-normal whitespace-pre-line text-primary`}>
               {data.explanation}
             </p>
           </>

@@ -15,7 +15,7 @@ export default function Dashboard() {
           <CeuLocal />
         </div>
 
-        <div className="container-infos-2 w-full flex flex-col justify-between gap-8 2xl:pb-0 order-1 2xl:order-2">
+        <div className="container-infos-2 w-full flex flex-col justify-between gap-8 2xl:gap-4 2xl:pb-0 order-1 2xl:order-2">
           <DataComemorativa />
           <CalendarioLunar />
         </div>

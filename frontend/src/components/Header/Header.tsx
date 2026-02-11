@@ -26,7 +26,7 @@ export default function Header() {
   }, [isDark]);
 
   return (
-    <header className="flex justify-end items-center w-full pr-12 py-4">
+    <header className="flex justify-end items-center w-full pr-12 py-2">
       <div className="flex flex-row w-full pl-12 items-center justify-between 2xl:pl-0 2xl:w-4/5">
         {/* LOGO */}
         <img
