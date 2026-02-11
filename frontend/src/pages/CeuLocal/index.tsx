@@ -17,7 +17,7 @@ export default function CeuLocal() {
         try {
           const { latitude, longitude } = position.coords;
           const res = await fetch(
-            `http://localhost:3000/api/sky?lat=${latitude}&lon=${longitude}`
+            `https://cosmicflow.onrender.com/api/sky?lat=${latitude}&lon=${longitude}`
           );
           const data = await res.json();
 

@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      "/translate": "http://localhost:3000",
+      "/translate": "https://cosmicflow.onrender.com",
     },
   },
 });
