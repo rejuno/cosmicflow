@@ -1,68 +1,123 @@
-# 🌌 CosmicFlow | Explore o Cosmos em Tempo Real [EM ANDAMENTO]
-### O CosmicFlow é um dashboard interativo desenvolvido para entusiastas da astronomia. Ele conecta o usuário aos eventos mais importantes do calendário da NASA, oferecendo uma visão detalhada do que está acontecendo no espaço agora, baseado na sua localização e na data atual.
+# 🌌 CosmicDay | Sua janela interativa para o cosmos, alimentada por dados em tempo real da NASA.
 
-<br>
+### O CosmicDay é um dashboard interativo que conecta entusiastas da astronomia aos dados em tempo real da NASA, personalizando a experiência de acordo com a sua localização no planeta.
+
+![Demo do projeto](./Cosmic-Day-Google-Chrome-2026-02-12-15-31-19%20(1).gif)
+
+
+[Reportar Bug](https://www.linkedin.com/in/renatajnovais/)
 
 # 🚀 Funcionalidades Principais
-  - **Calendário de Eventos NASA**: Feed em tempo real de futuras datas comemorativas e missões espaciais.
+- **Spotlight Astronômico (APOD)**: Explore a icônica "Imagem Astronômica do Dia" da NASA. O dashboard apresenta capturas em alta resolução acompanhadas de legendas técnicas detalhadas.
 
-  - **Deep Dive Contextual**: Clique em qualquer evento para abrir um painel detalhado com a história e ciência por trás da data.
+- **Espaço Localizado**: Uma janela exclusiva para o seu céu. Utilizando a API de geolocalização do navegador, o app renderiza um mapa estelar preciso baseado nas coordenadas reais do usuário.
 
-  - **Status "Hoje no Espaço"**: Identificação automática se a data atual possui algum evento histórico ou astronômico relevante.
+- **Perfil do Astronauta Diário**: Conecte-se com a história da exploração humana. O sistema seleciona aleatoriamente perfis de astronautas da agência espacial, apresentando suas trajetórias e missões.
 
-  - **Astronauta Cientista do Dia**: Um gerador diário que destaca mulheres cientistas e astronautas, promovendo visibilidade e inspiração.
+- **Monitor de Ciclo Lunar**: Acompanhe as fases da Lua em tempo real com dados astronômicos precisos, permitindo visualizar o estado atual do nosso satélite natural.
 
-  - **Ciclo Lunar**: Visualização precisa da fase da lua atualizada em tempo real.
+- **Calendário Cósmico Histórico**: Uma máquina do tempo astronômica. Navegue por décadas de arquivos da NASA através de um calendário interativo para descobrir o que o universo revelou em datas especiais.
 
-  - **Céu Local (Geolocalização)**: Integração com a localização do usuário para mostrar as condições de observação espacial naquele ponto específico da Terra.
+- **Ecossistema Multilingue (i18n)** - Experiência global sem barreiras. O projeto conta com suporte nativo e tradução dinâmica para Português, Inglês, Espanhol e Japonês, detectando automaticamente a preferência do sistema.
 
-<br>
 
-# 🛠️ Tecnologias Utilizadas
-Essa é uma ideia fantástica! O nome CosmicFlow soa moderno e fluido, combinando perfeitamente com a proposta de dados em tempo real. Como você está usando React e Tailwind, o README precisa refletir essa estética: limpo, futurista e organizado.
+# 🛠️ Stack Técnica
 
-Aqui está uma proposta de estrutura para o seu README.md que vai valorizar muito o seu portfólio:
+### **Frontend & Interface**
+* **React 18:** Biblioteca core para construção de interfaces reativas e baseadas em componentes.
+* **TypeScript:** Tipagem estática para garantir segurança, escalabilidade e melhor manutenção do código.
+* **Tailwind CSS:** Framework utilitário para estilização responsiva, implementando **Dark Mode** e efeitos de *Glassmorphism*.
+* **Vite:** Tooling de última geração para builds otimizados e desenvolvimento ultra-rápido.
 
-🌌 CosmicFlow | Explore o Cosmos em Tempo Real
-O CosmicFlow é um dashboard interativo desenvolvido para entusiastas da astronomia. Ele conecta o usuário aos eventos mais importantes do calendário da NASA, oferecendo uma visão detalhada do que está acontecendo no espaço agora, baseado na sua localização e na data atual.
+### **Backend & Integrações**
+* **Node.js & Express:** Ambiente de execução e framework para criação de rotas e gerenciamento de requisições.
+* **Axios & Node-Fetch:** Consumo eficiente de APIs assíncronas com tratamento de erros especializado.
+* **CORS & Dotenv:** Camadas de segurança para proteção de chaves de API e controle de acesso.
 
-Ver Demo | Reportar Bug
+### **APIs Utilizadas**
+* [**NASA APIs:**](https://api.nasa.gov/) Fonte primária de dados científicos (APOD e arquivos astronômicos).
+* [**Weather API (AstronomyAPI):**](https://www.weatherapi.com/) Engine para geração de mapas estelares personalizados.
+* [**The Space Devs API:**](https://thespacedevs.com/llapi) Banco de dados sobre astronautas e eventos espaciais.
+* [**Google Translate API:**](https://cloud.google.com/translate) Tradução dinâmica de conteúdos técnicos em tempo real.
 
-🚀 Funcionalidades Principais
-Calendário de Eventos NASA: Feed em tempo real de futuras datas comemorativas e missões espaciais.
+### **Performance & Infraestrutura**
+* **Estratégia de Caching:** Persistência via **LocalStorage**, reduzindo a latência e o consumo de cotas das APIs.
+* **Deploy Híbrido:** Backend hospedado no **Render** e Frontend distribuído via **Vercel**.
 
-Deep Dive Contextual: Clique em qualquer evento para abrir um painel detalhado com a história e ciência por trás da data.
 
-Status "Hoje no Espaço": Identificação automática se a data atual possui algum evento histórico ou astronômico relevante.
+## 🎨 Design System (UI)
 
-Astronauta Cientista do Dia: Um gerador diário que destaca mulheres cientistas e astronautas, promovendo visibilidade e inspiração.
+O design do **CosmicDay** foi planejado para ser imersivo e futurista, utilizando técnicas de *Glassmorphism* (efeito de vidro) para sobrepor dados científicos às imagens espaciais.
 
-Ciclo Lunar: Visualização precisa da fase da lua atualizada em tempo real.
+### 🌓 Temas
+- **Dark Mode (Padrão):** Fundo em tons profundos de roxo e preto para reduzir o cansaço visual e destacar as cores das nebulosas.
+- **Light Mode:** Interface limpa e minimalista, mantendo a legibilidade em ambientes iluminados.
 
-Céu Local (Geolocalização): Integração com a localização do usuário para mostrar as condições de observação espacial naquele ponto específico da Terra.
+### 🎨 Paleta de Cores
+| Cor  | Hex |
+| :--- | :--- |
+| **Primary** | `#332062` |
+| **Secondary** | `#F4F4F4` |
+| **Accent Light Mode** | `#A8DCEC` |
+| **Accent Dark Mode** | `#C6D5F2` |
 
-<br>
+### 🔡 Tipografia
+* **Cinzel:** Utilizada para títulos e elementos de navegação. Sua estética clássica e geométrica evoca a grandiosidade e a história das constelações.
+* **Cormorant:** Utilizada para corpos de texto e dados técnicos. Uma fonte sans-serif moderna que garante legibilidade e um toque tecnológico.
 
-# 🛠️ Tecnologias Utilizadas [PODE SOFRER ALTERAÇÕES]
+### 💠 Componentes Visuais
+- **Blur & Transparency:** Uso de `backdrop-blur` para criar camadas de profundidade.
+- **Micro-interações:** Animações de órbita e pulsação em estados de carregamento para manter o usuário engajado.
 
-O projeto foi construído utilizando o que há de mais moderno no ecossistema React:
+## ⚙️ Como Executar o Projeto
 
-**React 18**: Biblioteca principal para a interface.
+Este projeto é dividido em **Client** (Frontend) e **Server** (Backend).
 
-**Tailwind CSS**: Estilização utilitária e responsiva com foco em Dark Mode.
+### 📋 Pré-requisitos
+* [Node.js](https://nodejs.org/) (v18 ou superior)
+* Chave de API da [NASA](https://api.nasa.gov/)
+* Chave de API da [AstronomyAPI](https://astronomyapi.com/)
 
-**NASA APIs**: Consumo de dados oficiais (APOD, Asteroids NeoWs, etc).
+### 1️⃣ Configuração do Backend (Server)
+1. Navegue até a pasta do servidor: `cd backend`
+2. Instale as dependências: `npm install`
+3. Crie um arquivo `.env` e adicione a chave das APIs
+4. Inicie: `npm start` (Rodará em `http://localhost:3000`)
 
-**Vite**: Build tool ultra-rápida que proporciona uma experiência de desenvolvimento superior.
+### 2️⃣ Configuração do Frontend (Client)
+1. Navegue até a pasta do frontend: `cd client`
+2. Instale as dependências: `npm install`
+3. Crie um arquivo `.env`
+4. Inicie: `npm run dev` (Rodará em `http://localhost:5173`)
 
-**Geolocation API**: Para fornecer dados específicos baseados na posição do usuário.
 
-# 🎨 Interface (UI)
+## ⚙️ Como Executar o Projeto
 
-  - **Paleta de Cores**: EM BREVE
-  - **Tipografia**: EM BREVE
+### 📋 Pré-requisitos
+- Node.js instalado (v18+)
+- Chave da [NASA API](https://api.nasa.gov/)
+- Chave da [AstronomyAPI](https://astronomyapi.com/)
 
-# ⚙️ Como rodar o projeto [EM BREVE]
+### 🚀 Passo a Passo
+
+1. **Clone e Instalação**
+   ```bash
+   git clone [https://github.com/seu-usuario/cosmic-day.git](https://github.com/seu-usuario/cosmicflow.git)
+   cd cosmicflow
+
+2. **Configuração do Servidor (Backend)**
+    ```bash
+    cd server
+    npm install
+    # Crie um arquivo .env e adicione as APIs:
+    # exemplo: ASTRONOMY_API_KEY=sua_chave_aqui
+    node index.js
+
+3. **Configuração da Interface (Frontend)**
+    ```bash
+    cd client
+    npm install
+    npm run dev
 
 # 🌠 Futuras Implementações
 
@@ -70,5 +125,8 @@ O projeto foi construído utilizando o que há de mais moderno no ecossistema Re
 
 [ ] Exportação de eventos diretamente para o Google Calendar.
 
+[ ] Filtrar apenas mulheres para mostrar o astronauta do dia.
+
 # 📝 Licença
 Este projeto está sob a licença [MIT](./LICENSE). Veja o arquivo LICENSE para mais detalhes.
+
