@@ -151,12 +151,12 @@ export default function CalendarioLunar() {
         </div>
 
         {/* DIAS DA SEMANA */}
-        <div className="grid grid-cols-7 text-center font-bold text-2xl text-primary font-sora bg-light p-2 rounded-t-lg">
+        <div className="grid grid-cols-7 text-center font-bold text-xl 2xl:text-2xl text-primary font-sora bg-light p-2 rounded-t-lg">
           {texts.weekDays.map((d) => <div key={d}>{d}</div>)}
         </div>
 
         {/* CALENDÁRIO GRID */}
-        <div className="grid grid-cols-7 gap-y-6 gap-x-2 min-h-[330px] text-3xl font-sora font-extrabold">
+        <div className="grid grid-cols-7 gap-y-6 gap-x-2 min-h-[330px] text-xl 2xl:text-3xl font-sora font-extrabold">
           {Array.from({ length: 42 }).map((_, index) => {
             const dayNumber = index - firstDay + 1;
             if (dayNumber < 1 || dayNumber > daysInMonth) return <div key={index} />;
