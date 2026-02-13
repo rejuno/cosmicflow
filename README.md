@@ -3,9 +3,6 @@
 ### O CosmicDay é um dashboard interativo que conecta entusiastas da astronomia aos dados em tempo real da NASA, personalizando a experiência de acordo com a sua localização no planeta.
 
 
-<img width="1919" height="959" alt="image" src="https://github.com/user-attachments/assets/9edc0fa6-3c31-4b01-86bc-72f31c7636bf" />
-
-
 
 [Reportar Bug](https://www.linkedin.com/in/renatajnovais/)
 
