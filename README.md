@@ -2,7 +2,9 @@
 
 ### O CosmicDay é um dashboard interativo que conecta entusiastas da astronomia aos dados em tempo real da NASA, personalizando a experiência de acordo com a sua localização no planeta.
 
-![Demo do projeto](./Cosmic-Day-Google-Chrome-2026-02-12-15-31-19%20(1).gif)
+
+<img width="1919" height="959" alt="image" src="https://github.com/user-attachments/assets/9edc0fa6-3c31-4b01-86bc-72f31c7636bf" />
+
 
 
 [Reportar Bug](https://www.linkedin.com/in/renatajnovais/)
@@ -36,7 +38,7 @@
 
 ### **APIs Utilizadas**
 * [**NASA APIs:**](https://api.nasa.gov/) Fonte primária de dados científicos (APOD e arquivos astronômicos).
-* [**Weather API (AstronomyAPI):**](https://www.weatherapi.com/) Engine para geração de mapas estelares personalizados.
+* [**Weather API (AstronomyAPI):**](https://www.weatherapi.com/) Engine para geração de mapas estelares personalizados e informar fase da lua atual.
 * [**The Space Devs API:**](https://thespacedevs.com/llapi) Banco de dados sobre astronautas e eventos espaciais.
 * [**Google Translate API:**](https://cloud.google.com/translate) Tradução dinâmica de conteúdos técnicos em tempo real.
 
@@ -75,8 +77,7 @@ Este projeto é dividido em **Client** (Frontend) e **Server** (Backend).
 
 ### 📋 Pré-requisitos
 * [Node.js](https://nodejs.org/) (v18 ou superior)
-* Chave de API da [NASA](https://api.nasa.gov/)
-* Chave de API da [AstronomyAPI](https://astronomyapi.com/)
+* Chave das APIs informadas na seção **APIs Utilizadas**
 
 ### 1️⃣ Configuração do Backend (Server)
 1. Navegue até a pasta do servidor: `cd backend`
@@ -95,8 +96,7 @@ Este projeto é dividido em **Client** (Frontend) e **Server** (Backend).
 
 ### 📋 Pré-requisitos
 - Node.js instalado (v18+)
-- Chave da [NASA API](https://api.nasa.gov/)
-- Chave da [AstronomyAPI](https://astronomyapi.com/)
+- Chave das APIs informadas na seção **APIs Utilizadas**
 
 ### 🚀 Passo a Passo
 
@@ -107,7 +107,7 @@ Este projeto é dividido em **Client** (Frontend) e **Server** (Backend).
 
 2. **Configuração do Servidor (Backend)**
     ```bash
-    cd server
+    cd backend
     npm install
     # Crie um arquivo .env e adicione as APIs:
     # exemplo: ASTRONOMY_API_KEY=sua_chave_aqui
@@ -123,10 +123,8 @@ Este projeto é dividido em **Client** (Frontend) e **Server** (Backend).
 
 [ ] Notificações Push para chuvas de meteoros.
 
-[ ] Exportação de eventos diretamente para o Google Calendar.
-
-[ ] Filtrar apenas mulheres para mostrar o astronauta do dia.
+[ ] Filtrar apenas mulheres para mostrar a astronauta do dia.
 
 # 📝 Licença
-Este projeto está sob a licença [MIT](./LICENSE). Veja o arquivo LICENSE para mais detalhes.
+Este projeto está sob a licença MIT.
 
